@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -11,4 +11,99 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* shared style */
+.display-flex {
+  display: flex;
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.banner,
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* dark 01 */
+.text-dark-gray {
+  color: #131313;
+}
+
+/* dark 02 */
+.text-gray {
+  color: #424242;
+}
+
+/* dark 03 */
+.text-light-gray {
+  color: #727272;
+}
+
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+}
+
+/* header style */
+.brand {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* navbar  related style */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* banner related style */
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-titile {
+  font-size: 4rem;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .nav-links,
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .banner-titile {
+    font-size: 3rem;
+  }
 }
