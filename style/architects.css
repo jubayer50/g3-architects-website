@@ -52,6 +52,10 @@ main {
   color: #ff900e;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .btn-primary {
   background-color: #ff900e;
   color: white;
@@ -136,6 +140,58 @@ section {
   margin-bottom: 25px;
 }
 
+/* features will enjoy section */
+.features {
+  gap: 130px;
+}
+
+.features-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.features-description {
+  max-width: 586px;
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  max-width: 886px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px #00000009;
+  margin-bottom: 20px;
+}
+
+.feature-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-card-description {
+  margin: 0;
+}
+
+.experience-badge {
+  padding: 45px 42px;
+  margin-left: -92px;
+  margin-top: -123px;
+}
+
+.experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+  /* margin-top: 0;
+    margin-bottom: 10px; */
+}
+
+.feature-img img {
+  width: 100%;
+}
+
 /* some facts related style */
 .facts-container {
   display: grid;
@@ -199,6 +255,19 @@ section {
   filter: grayscale(100%);
 }
 
+.footer-content {
+  max-width: 1440px;
+  margin: 130px auto 216px auto;
+  padding: 38px 10px;
+  text-align: center;
+  background-color: #fff4e7;
+  border-radius: 8px;
+}
+
+.footer-copywrite {
+  text-align: center;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .nav-links,
@@ -226,6 +295,23 @@ section {
 
   .our-features {
     margin-left: 20px;
+  }
+
+  .experience-badge {
+    padding: 20px 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .experience-year {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  /* feature will need enjoy */
+  .features {
+    gap: 130px;
+    flex-direction: column;
   }
 
   /* some facts related style */
@@ -266,6 +352,23 @@ section {
 
   .section-title {
     margin-top: 0;
+  }
+
+  /* feature will need enjoy */
+  .features {
+    gap: 130px;
+    flex-direction: column;
+  }
+
+  .experience-badge {
+    padding: 22px 26px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .experience-year {
+    font-size: 3rem;
+    font-weight: 700;
   }
 
   /* some facts related style */
